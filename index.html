@@ -20,7 +20,7 @@
       background-repeat: no-repeat; /* Prevents tiling */
    }
   header {
-      background-color: #d8b7ff; /* pastel purple */
+      background-color: rgba(216, 183, 255, 0.7); /* pastel purple with transparency */
       padding: 15px;
       text-align: center;
       font-family: 'Dancing Script', cursive;
@@ -33,6 +33,20 @@
       top: 0px;
       width: 100%;
       animation: slideFade 2s ease-out forwards;
+      text-shadow: 0 0 20px red, 0 0 12px pink;
+   }
+
+   footer {
+      background-color: rgba(154, 90, 226, 0.7); /* pastel purple with transparency */
+      padding: 10px;
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.5rem;
+      color: black;
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      animation: slideFade 3s ease-out forwards;
    }
 
    @keyframes slideFade {
@@ -46,12 +60,33 @@
     }
 }
 
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 100px; /* spacing between links */
+      font-size: 30px;
+      transition: color 0.3s ease;
+    }
+    .navbar a:hover {
+      color: #18e798; /* soft pink hover effect */
+      text-decoration: underline;
+      text-shadow: 0 0 8px #ff99cc, 0 0 12px #ff66b2;
+    }
+
   </style>
 </head>
 <body>
 <header>
   Mello's Poems
 </header>
+<footer>
+    <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</footer>
+
 
 </body>
 </html>
